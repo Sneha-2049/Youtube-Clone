@@ -1,0 +1,230 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* hearder */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    padding-right: 35px;
+    position: fixed;
+}
+
+.col-1 {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: 25px;
+}
+
+.col-2 {
+    display: flex;
+    gap: 12px;
+}
+
+#search-bar {
+    width: 680px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 25px;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 250;
+}
+
+.search-icon {
+    background-color: rgb(233, 230, 230);
+    width: 70px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid rgb(194, 193, 193);
+    height: 45px;
+    margin-left: -66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(233, 230, 230);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.col-3 {
+    display: flex;
+    gap: 20px;
+    font-size: 35px;
+}
+
+/* Side-Bar */
+.side-bar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 55px;
+    width: 245px;
+    padding-right: 10px;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    font-size: 15px;
+    font-weight: 230;
+
+}
+
+.menu-row {
+    padding: 15px 0px;
+    padding-right: 15px;
+}
+
+.rows {
+    display: flex;
+    gap: 20px;
+    width: 205px;
+    align-items: center;
+    padding: 6px 10px;
+    margin-left: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.rows:hover {
+    background-color: rgb(246, 243, 243);
+}
+
+.signin-btn {
+    width: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: 1px solid rgb(211, 209, 209);
+    outline: none;
+    background-color: transparent;
+}
+
+.text:hover {
+    background-color: transparent;
+}
+
+hr {
+    border: 0.5px solid rgb(227, 226, 226);
+}
+
+/* top-bar */
+.top-bar {
+    display: flex;
+    position: fixed;
+    top: 67px;
+    left: 260px;
+    width: calc(100vw - 260px);
+    overflow-x: scroll;
+    gap: 10px;
+}
+
+.top-bar::-webkit-scrollbar {
+    height: 0;
+}
+
+.top-bar:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.topics {
+    background-color: gainsboro;
+    padding: 6px 11px;
+    height: fit-content;
+    white-space: nowrap;
+    border-radius: 8px;
+    border: 1px solid rgb(187, 184, 184);
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: black;
+    color: white;
+}
+
+.chip-color {
+    background-color: black;
+    color: white;
+}
+
+/* Video-wrapper */
+.video-wrapper {
+    display: grid;
+    position: relative;
+    top: 130px;
+    left: 260px;
+    width: calc(100vw - 260px);
+    grid-template-columns: repeat(3, 370px);
+    gap: 5px 15px;
+    grid-auto-rows: 345px;
+    height: calc(100vh - 130px);
+    overflow-y: scroll;
+    cursor: pointer;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: .2s;
+    transition-delay: .2s;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 2s;
+}
+
+.video .thumbnail {
+    width: 100%;
+    height: 65%;
+
+}
+
+.video-info {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.video-info .chan-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.video:hover {
+    transform: scale(1.1);
+}
